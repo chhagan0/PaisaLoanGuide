@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Loan Status"
+        android:id="@+id/loanstatusnav"
+        android:iconTint="@color/black"
+        android:icon="@drawable/travel"
+      />
+    <item android:title="About Us"
+        android:icon="@drawable/terms"
+        android:iconTint="@color/black"/>
+</menu>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcoolor"
+    tools:context=".IFSCcode">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/archivo_semibold"
+            android:text="IFSC Code Validator"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@id/lin1"
+        android:layout_marginTop="@dimen/_100sdp"
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/idedtIfscCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter IFSC code"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAllCaps="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnGetBankDetails"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:textSize="@dimen/_13sdp"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:shadowRadius="@integer/material_motion_duration_long_2"
+        android:textColor="@color/btncolor"
+        android:backgroundTint="@color/graycolor"
+        android:text="Get Bank Details"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/idTVBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_below="@id/lin1"
+            android:layout_marginTop="@dimen/_50sdp"
+            app:gnt_template_type="@layout/gnt_small_template_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+
+</RelativeLayout>

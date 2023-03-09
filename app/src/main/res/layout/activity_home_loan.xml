@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcoolor"
+    tools:context=".ApplyLoan.HomeLoan">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/lin1">
+        <ImageView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/back"
+            android:id="@+id/backbtn"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lin1"
+        android:id="@+id/lin2"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Loan Information"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/archivo_semibold"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lin2"
+        android:layout_marginTop="@dimen/_30sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/my_template"
+                android:layout_below="@id/lin1"
+                android:layout_marginBottom="@dimen/_50sdp"
+                app:gnt_template_type="@layout/gnt_small_template_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_you_have_equity_in_your_home_the_house_is_worth_more_than_you_owe_on_it_you_can_use_that_equity_to_help_pay_for_big_projects_home_equity_loans_are_good_for_renovating_the_house_consolidating_credit_card_debt_paying_off_student_loans_and_many_other_worthwhile_projects_his_is_the_most_common_type_of_home_loan_availed_to_purchase_a_house_there_are_many_housing_finance_companies_public_banks_and_private_banks_that_offer_housing_loans_where_you_borrow_money_to_purchase_the_house_of_your_choice_and_repay_the_loan_n_monthly_instalments_you_can_get_up_to_80_90_of_the_houses_market_price_in_the_form_of_financing_the_lender_will_hold_the_house_until_you_completely_repay_the_loan_this_is_the_right_home_loan_type_if_you_already_have_a_plot_of_land_and_you_need_financing_to_construct_a_house_in_that_land_a_home_improvement_loan_provides_financing_for_renovating_or_repairing_the_house_if_there_s_any_fault_in_the_existing_system_such_as_painting_the_house_s_interior_or_exterior_plumbing_upgrading_the_electrical_system_waterproofing_the_ceiling_and_more"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/archivo_semibold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:backgroundTint="@color/btncolor"
+                    android:text="Apply now"
+                    android:textAllCaps="false" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/applyforloan"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:backgroundTint="@color/btncolor"
+                    android:text="Get Now"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

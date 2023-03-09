@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ads.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IMP"
+        tools:targetApi="31">
+        <activity
+            android:name=".blankscreen"
+            android:exported="false" />
+        <activity
+            android:name=".InstantCash"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.BusinessLoanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen3"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".CashCounter"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.SmallBusinessInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.SmallBusinessEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.SmallBusinessLoan"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.PayDayLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.PaydayLoanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.PaydayLoan"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.MortgagesLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.MortgagesLoanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.MortgagesLoan"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.StudentLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.StudentLoanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.SrudentLoan"
+            android:exported="false" />
+        <activity
+            android:name=".IFSCcode"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.BusinessLoaninfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMICalculator"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.BusinessLone"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.HomeloanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.HomeLoan"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.HomeLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.AutoLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.AutoLoan"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.AutoLoanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".LoanInfo.PersonalLoanInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EMIs.PersonaloanEmi"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyLoan.PersonalLoan"
+            android:exported="false" />
+        <activity
+            android:name=".Loantype"
+            android:exported="false" />
+        <activity
+            android:name=".LoanStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.YesBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.UnionBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.UCOBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.SarswatBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.RBLbank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.PNB"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.KotakMahindraBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.IndusindBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.IndianBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.IdbiBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.IcicBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.HdfcBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.FederalBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.CanaraBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.BankOfIndia"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.AndhraBank"
+            android:exported="false" />
+        <activity
+            android:name=".Banks.AllhabadBank"
+            android:exported="false" />
+        <activity
+            android:name=".AllBanks"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcoolor"
+    tools:context=".ApplyLoan.BusinessLone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/lin1">
+        <ImageView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/back"
+            android:id="@+id/backbtn"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/lin1"
+        android:id="@+id/lin2"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Loan Information"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/archivo_semibold"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lin2"
+        android:layout_marginTop="@dimen/_30sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_below="@id/lin1"
+                android:layout_centerHorizontal="true"
+                app:adSize="BANNER"
+                android:layout_gravity="center_horizontal"
+                app:adUnitId="@string/bannerid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_promote_small_enterprises_in_the_country_the_government_has_introduced_several_loan_schemes_apart_from_the_pradhan_mantri_mudra_yojana_there_are_many_other_schemes_in_which_you_can_take_small_loans_to_big_loans_1010_at_this_time_according_to_the_schemes_of_the_central_and_state_government_you_can_take_a_loan_of_rs_50_000_o_rs_1_lakh_for_your_business_1010_actually_banks_decide_to_give_you_a_loan_according_to_your_business_plan_if_the_bank_feels_that_your_business_and_profits_from_it_will_be_so_much_that_you_will_be_able_to_repay_the_loan_of_the_bank_within_the_stipulated_period_after_completing_your_expenses_only_then_the_bank_approves_your_loan_1010_what_are_the_benefits_of_taking_a_business_loan_financial_support_for_inward_business_needs_of_cash_to_meet_financial_needs_for_both_short_and_long_term_a_bank_loan_may_be_obtained_from_a_bank_and_may_be_either_secured_or_unsecured_for_secured_loans_banks_will_require_collateral_which_may_be_lost_if_repayments_are_not_made_the_bank_will_probably_wish_to_see_the_business_s_accounts_balance_sheet_and_business_plan_as_well_as_studying_the_principals_credit_histories_many_smaller_businesses_are_now_however_turning_towards_alternative_finance_providers_especially_in_the_case_of_smaller_firms"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/archivo_semibold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:backgroundTint="@color/btncolor"
+                    android:text="Apply now"
+                    android:textAllCaps="false" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/applyforloan"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:backgroundTint="@color/btncolor"
+                    android:text="Get Now"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

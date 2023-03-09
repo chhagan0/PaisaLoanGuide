@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "817048570824",
+    "firebase_url": "https://com-fliploan-guide-default-rtdb.firebaseio.com",
+    "project_id": "com-fliploan-guide",
+    "storage_bucket": "com-fliploan-guide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817048570824:android:a2648c4d9c28341ff94efd",
+        "android_client_info": {
+          "package_name": "com.fliploan.guide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817048570824-8u15o7qr18fs6lqijr9rc8std11rt3b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXMDN4dL5Y_5XVxW1mgc_99y_wntpw7rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817048570824-8u15o7qr18fs6lqijr9rc8std11rt3b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817048570824:android:8a65ef04cc1f0b96f94efd",
+        "android_client_info": {
+          "package_name": "com.fliploan.guideinstantloan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817048570824-8u15o7qr18fs6lqijr9rc8std11rt3b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXMDN4dL5Y_5XVxW1mgc_99y_wntpw7rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817048570824-8u15o7qr18fs6lqijr9rc8std11rt3b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
