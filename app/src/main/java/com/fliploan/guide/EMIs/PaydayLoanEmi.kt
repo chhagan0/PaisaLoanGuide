@@ -11,6 +11,7 @@ import com.fliploan.guide.LoanInfo.PayDayLoanInfo
 import com.fliploan.guide.R
 import com.fliploan.guide.ads.Bannerad
 import com.example.imp.ads.mainapp
+import com.fliploan.guide.ads.intertitial
 import com.fliploan.guide.databinding.ActivityPaydayLoanEmiBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
 import com.google.android.ads.nativetemplates.TemplateView
@@ -28,8 +29,12 @@ class PaydayLoanEmi : mainapp() {
 nativeads()
         val adRequest = AdRequest.Builder().build()
         Bannerad.mAdView?.loadAd(adRequest)
-        binding.next.setOnClickListener { startActivity(Intent(this, PayDayLoanInfo::class.java)) }
-        binding.backbtn.setOnClickListener { startActivity(Intent(this, PaydayLoan::class.java)) }
+        binding.next.setOnClickListener { val inte=(Intent(this, PayDayLoanInfo::class.java))
+            intertitial.showAds(this,inte)
+        }
+        binding.backbtn.setOnClickListener { val inte=(Intent(this, PaydayLoan::class.java))
+            intertitial.showAds(this,inte)
+        }
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {
             startActivity(

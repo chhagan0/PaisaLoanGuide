@@ -41,25 +41,25 @@ class BusinessLoanEmi : mainapp() {
 
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, BusinessLoaninfo::class.java))
+                val inte=(Intent(this, BusinessLoaninfo::class.java))
+                intertitial.showAds(this,inte)
 
-                finish()
             }, 3000)
         }
 
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     BusinessLone::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.btn1.setOnClickListener {
             binding!!.input.setText("500000")

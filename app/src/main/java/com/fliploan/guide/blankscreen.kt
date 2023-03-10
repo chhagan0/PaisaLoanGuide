@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import com.fliploan.guide.ads.Bannerad
 import com.example.imp.ads.mainapp
+import com.fliploan.guide.ads.intertitial
+import com.fliploan.guide.config.Ads
 
 import com.fliploan.guide.databinding.ActivityBlankscreenBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
@@ -23,12 +25,14 @@ nativeads()
         val adRequest = AdRequest.Builder().build()
         Bannerad.mAdView?.loadAd(adRequest)
         binding!!.backbtn.setOnClickListener {
-            startActivity(Intent(this, InstantCash::class.java))
+            val inte=(Intent(this, InstantCash::class.java))
+            intertitial.showAds(this,inte)
+
         }
     }
     private fun nativeads() {
         MobileAds.initialize(this)
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        val adLoader = AdLoader.Builder(this,   Ads.nativeId.toString())
             .forNativeAd { nativeAd ->
                 val styles =
                     NativeTemplateStyle.Builder().build()

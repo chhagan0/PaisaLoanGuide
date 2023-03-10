@@ -31,24 +31,19 @@ class BusinessLone : mainapp() {
 
         binding.applyforloan.setOnClickListener {
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, HomeloanEmi::class.java))
-
-                finish()
+                val inte= Intent(this, HomeloanEmi::class.java)
+                   intertitial.showAds(this,inte)
             }, 3000)}
         binding.backbtn.setOnClickListener {
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, Loantype::class.java))
-
+               val inte=Intent(this, Loantype::class.java)
+intertitial.showAds(this,inte)
                 finish()
             }, 3000)}
     }

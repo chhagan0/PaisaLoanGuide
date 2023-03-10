@@ -41,16 +41,16 @@ class HomeloanEmi : mainapp() {
         binding.next.setOnClickListener {
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, HomeLoanInfo::class.java))
+                val inte=(Intent(this, HomeLoanInfo::class.java))
+                intertitial.showAds(this,inte)
 
-                finish()
             }, 3000)}
-        binding.backbtn.setOnClickListener { startActivity(Intent(this, HomeLoan::class.java)) }
+        binding.backbtn.setOnClickListener { val inte=(Intent(this, HomeLoan::class.java))
+            intertitial.showAds(this,inte)
+        }
 
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {

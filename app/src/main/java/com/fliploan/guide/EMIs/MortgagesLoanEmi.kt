@@ -36,23 +36,24 @@ class MortgagesLoanEmi : mainapp() {
 
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, MortgagesLoanInfo::class.java))
+                val inte=(Intent(this, MortgagesLoanInfo::class.java))
 
-                finish()
+                intertitial.showAds(this,inte)
+
             }, 3000)
         }
         binding.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     MortgagesLoan::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {

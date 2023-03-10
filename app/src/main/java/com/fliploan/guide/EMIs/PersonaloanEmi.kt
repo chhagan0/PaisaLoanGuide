@@ -41,27 +41,29 @@ nativeads()
 
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, PersonalLoanInfo::class.java))
+                val inte=(Intent(this, PersonalLoanInfo::class.java))
+                intertitial.showAds(this,inte)
 
-                finish()
             }, 3000)
         }
-        binding.backbtn.setOnClickListener { startActivity(Intent(this, PersonalLoan::class.java)) }
+        binding.backbtn.setOnClickListener { val inte=(Intent(this, PersonalLoan::class.java))
+            intertitial.showAds(this,inte)
+        }
 
 
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     BusinessLone::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.btn1.setOnClickListener {
             binding!!.input.setText("500000")

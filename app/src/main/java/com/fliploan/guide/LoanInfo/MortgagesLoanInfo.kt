@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.fliploan.guide.ApplyLoan.*
 import com.fliploan.guide.EMIs.MortgagesLoanEmi
 import com.fliploan.guide.R
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivityMortgagesLoanInfoBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
 import com.google.android.ads.nativetemplates.TemplateView
@@ -32,7 +33,7 @@ nativeads()
     }
     private fun nativeads() {
         MobileAds.initialize(this)
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        val adLoader = AdLoader.Builder(this, Ads.nativeId.toString())
             .forNativeAd { nativeAd ->
                 val styles =
                     NativeTemplateStyle.Builder().build()

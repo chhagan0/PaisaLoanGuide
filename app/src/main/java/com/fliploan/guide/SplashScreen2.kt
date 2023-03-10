@@ -8,11 +8,17 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.annotation.RequiresApi
+import com.fliploan.guide.DataClass.Users
 import com.example.imp.ads.mainapp
 import com.fliploan.guide.ads.intertitial
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivitySplashScreen2Binding
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 
 class SplashScreen2 : mainapp() {
@@ -53,7 +59,7 @@ class SplashScreen2 : mainapp() {
                 progress.dismiss()
 
                 val openuri = Intent(Intent.ACTION_VIEW)
-                openuri.data = Uri.parse("https://photoslideshowprivacypolicy.blogspot.com/?m=1")
+                openuri.data = Uri.parse(Ads.baseurl2.toString())
                 startActivity(openuri)
                 intertitial.showAds(this, openuri)
 

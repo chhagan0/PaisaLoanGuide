@@ -9,7 +9,7 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import com.example.imp.DataClass.Users
+import com.fliploan.guide.DataClass.Users
 import com.example.imp.ads.mainapp
 import com.fliploan.guide.Loantype
 import com.fliploan.guide.ads.Bannerad
@@ -62,9 +62,7 @@ class PersonalLoan : mainapp() {
         }
         binding.backbtn.setOnClickListener {
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
                 val inte =Intent(this, Loantype::class.java)

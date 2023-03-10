@@ -171,37 +171,43 @@ class SplashScreen : AppCompatActivity() {
                     val data: String =
                         snapshot.child("appOpenId").getValue(String::class.java).toString()
                     val bannerId: String =
-                        snapshot.child("appOpenId").getValue(String::class.java).toString()
+                        snapshot.child("appBannerId").getValue(String::class.java).toString()
                     val interstitialId: String =
-                        snapshot.child("appOpenId").getValue(String::class.java).toString()
-                    val baseurl: String =
-                        snapshot.child("appOpenId").getValue(String::class.java).toString()
+                        snapshot.child("appInterstialId").getValue(String::class.java).toString()
+                    val baseurl1: String =
+                        snapshot.child("appbaseurl1").getValue(String::class.java).toString()
+                    val baseurl2: String =
+                        snapshot.child("appbaseurl2").getValue(String::class.java).toString()
+                    val nativeId: String =
+                        snapshot.child("appNativeId").getValue(String::class.java).toString()
                     url!!.appopnid = data
                     url.bannerId = bannerId
                     url.interstitialId = interstitialId
-                    url.baseurl = baseurl
+                    url.baseurl1 = baseurl1
+                    url.baseurl2 = baseurl2
+                    url.nativeId=nativeId
 
 
                     val dataMap = snapshot.value as HashMap<String, Any>
                     isOpen = true
 
                     editor.putString("appOpenId", dataMap.getValue("appOpenId").toString())
-                    editor.putString("bannerId", dataMap.getValue("bannerId").toString())
+                    editor.putString("appBannerId", dataMap.getValue("appBannerId").toString())
 //                    editor.putString("bannerId2", dataMap.getValue("bannerId2").toString())
-                    editor.putString("baseurl", dataMap.getValue("baseurl").toString())
+                    editor.putString("appbaseurl1", dataMap.getValue("appbaseurl1").toString())
                     editor.putString(
-                        "interstitialId",
-                        dataMap.getValue("interstitialId").toString()
+                        "appInterstialId",
+                        dataMap.getValue("appInterstialId").toString()
                     )
 //                    editor.putString("interstitialId2", dataMap.getValue("interstitialId2").toString())
 //                    editor.putString("baseurl2", dataMap.getValue("baseurl2").toString())
-                    editor.putString("nativeId", dataMap.getValue("nativeId").toString())
+                    editor.putString("appNativeId", dataMap.getValue("appNativeId").toString())
 //                    editor.putString("nativeId2", dataMap.getValue("nativeId2").toString())
-                    editor.putString("help", dataMap.getValue("help").toString())
+//                    editor.putString("help", dataMap.getValue("help").toString())
                     editor.apply()
 
                     openActivity()
-                    Log.d("SHUBH", "onDataChange: " + dataMap.getValue("nativeId").toString())
+                    Log.d("SHUBH", "onDataChange: " + dataMap.getValue("appNativeId").toString())
 
                 }
 

@@ -35,32 +35,35 @@ class SmallBusinessEmi : mainapp() {
 
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, SmallBusinessInfo::class.java))
+                val inte=(Intent(this, SmallBusinessInfo::class.java))
 
-                finish()
+                intertitial.showAds(this,inte)
+
             }, 3000)
         }
         binding.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     SmallBusinessLoan::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     BusinessLone::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.btn1.setOnClickListener {
             binding!!.input.setText("500000")

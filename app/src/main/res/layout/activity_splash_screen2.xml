@@ -36,6 +36,7 @@
             android:text="@string/guideline"
             android:textAlignment="center"
             android:textAllCaps="false"
+            android:id="@+id/linkk"
             android:textColor="@color/black"
             android:textSize="@dimen/_10sdp"
             android:fontFamily="@font/archivo_semibold"/>

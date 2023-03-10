@@ -50,17 +50,21 @@ class AutoLoanEmi : mainapp() {
 
             }, 3000)
         }
-        binding!!.backbtn.setOnClickListener { startActivity(Intent(this, AutoLoan::class.java)) }
+        binding!!.backbtn.setOnClickListener { val inte=(Intent(this, AutoLoan::class.java))
+             intertitial.showAds(this,inte)
+        }
 
 
         binding!!.cheak.setOnClickListener { process() }
         binding!!.backbtn.setOnClickListener {
-            startActivity(
+            val inte=(
                 Intent(
                     this,
                     BusinessLone::class.java
                 )
             )
+            intertitial.showAds(this,inte)
+
         }
         binding!!.btn1.setOnClickListener {
             binding!!.input.setText("500000")

@@ -15,6 +15,7 @@ import com.fliploan.guide.MainActivity
  import com.fliploan.guide.ads.intertitial
 import com.example.imp.ads.mainapp
 import com.fliploan.guide.R
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivityPnbBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
 import com.google.android.ads.nativetemplates.TemplateView
@@ -38,14 +39,11 @@ class PNB : mainapp() {
         binding.backbtn.setOnClickListener {
 
             progress!!.show()
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-            }
+
             Handler(Looper.getMainLooper()).postDelayed({
                 progress!!.dismiss()
-                startActivity(Intent(this, MainActivity::class.java))
-
-                finish()
+                val inte=(Intent(this, MainActivity::class.java))
+                intertitial.showAds(this,inte)
             }, 3000)
         }
 
@@ -60,7 +58,7 @@ class PNB : mainapp() {
     }
     private fun nativeads() {
         MobileAds.initialize(this)
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        val adLoader = AdLoader.Builder(this, Ads.nativeId.toString())
             .forNativeAd { nativeAd ->
                 val styles =
                     NativeTemplateStyle.Builder().build()

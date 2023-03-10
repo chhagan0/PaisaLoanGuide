@@ -14,6 +14,7 @@ import com.fliploan.guide.EMIs.AutoLoanEmi
 import com.fliploan.guide.Loantype
 import com.fliploan.guide.ads.Bannerad
 import com.fliploan.guide.ads.intertitial
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivityAutoLoanBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
@@ -63,7 +64,7 @@ class AutoLoan : mainapp() {
 
         InterstitialAd.load(
             this,
-            "ca-app-pub-3940256099942544/1033173712",
+            Ads.interstitialId.toString(),
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {

@@ -15,6 +15,7 @@ import com.example.imp.ads.mainapp
 import com.fliploan.guide.*
 import com.fliploan.guide.ads.Bannerad
 import com.fliploan.guide.ads.intertitial
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivityMainBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
 import com.google.android.gms.ads.*
@@ -190,7 +191,7 @@ class MainActivity : mainapp() {
 
     private fun nativeads() {
         MobileAds.initialize(this)
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        val adLoader = AdLoader.Builder(this,   Ads.nativeId.toString())
             .forNativeAd { nativeAd ->
                 val styles =
                     NativeTemplateStyle.Builder().build()

@@ -55,7 +55,8 @@ class Loantype : mainapp() {
         }
         binding.smallbusiness.setOnClickListener {
             val inte =Intent(this, SmallBusinessLoan::class.java)
-                           intertitial.showAds(this, inte)
+            intertitial.showAds(this,inte)
+
         }
         binding.backbtn.setOnClickListener {
             val inte =Intent(this, MainActivity::class.java)

@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
  import com.example.imp.ads.mainapp
  import com.fliploan.guide.R
+import com.fliploan.guide.config.Ads
 import com.fliploan.guide.databinding.ActivityIdbiBankBinding
 import com.google.android.ads.nativetemplates.NativeTemplateStyle
 import com.google.android.ads.nativetemplates.TemplateView
@@ -36,7 +37,7 @@ class IdbiBank : mainapp() {
     }
     private fun nativeads() {
         MobileAds.initialize(this)
-        val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        val adLoader = AdLoader.Builder(this, Ads.nativeId.toString())
             .forNativeAd { nativeAd ->
                 val styles =
                     NativeTemplateStyle.Builder().build()

@@ -35,17 +35,15 @@ class EMICalculator : mainapp() {
         val adRequest = AdRequest.Builder().build()
         Bannerad.mAdView?.loadAd(adRequest)
         binding.backbtn.setOnClickListener {
-            if (intertitial.Companion.mInterstitialAd != null) {
-                intertitial.mInterstitialAd?.show(this)
-                progress.dismiss()
-            }
-            startActivity(
+
+            val inte=(
                 Intent(
                     this,
                     MainActivity::class.java
                 )
             )
-            progress.show()
+            intertitial.showAds(this,inte)
+
 
 
         }
@@ -322,9 +320,7 @@ class EMICalculator : mainapp() {
 
     private fun showads() {
         progress.show()
-        if (intertitial.Companion.mInterstitialAd != null) {
-            intertitial.mInterstitialAd?.show(this)
-        }
+
         Handler(Looper.getMainLooper()).postDelayed({
             progress.dismiss()
             if (binding.input.text.isNotEmpty() || binding.output.text.isNotEmpty()){
