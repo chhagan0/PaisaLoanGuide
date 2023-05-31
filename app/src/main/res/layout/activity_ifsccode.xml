@@ -29,7 +29,22 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lin1"
 
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loader"
+            android:layout_below="@id/lin1"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -75,13 +90,23 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="@dimen/_15sdp" />
-        <com.google.android.ads.nativetemplates.TemplateView
-            android:id="@+id/my_template"
-            android:layout_below="@id/lin1"
-            android:layout_marginTop="@dimen/_50sdp"
-            app:gnt_template_type="@layout/gnt_small_template_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-</LinearLayout>
 
+
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
 </RelativeLayout>

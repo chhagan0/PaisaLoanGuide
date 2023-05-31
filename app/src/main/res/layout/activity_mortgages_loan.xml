@@ -32,7 +32,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mortgages Loan Information"
+            android:text=" Instant Loan Guide
+ Information"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/_20sdp"
             android:textSize="@dimen/_16sdp"
@@ -42,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/lin2"
+        android:layout_above="@id/bannerbottom"
         android:layout_marginTop="@dimen/_30sdp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,15 +51,23 @@
             android:orientation="vertical"
             >
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_80sdp"
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_below="@id/lin1"
-                android:layout_centerHorizontal="true"
-                app:adSize="BANNER"
-                android:layout_gravity="center_horizontal"
-                app:adUnitId="@string/bannerid"/>
+
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loader"
+                    android:layout_below="@id/lin1"
+                    android:indeterminateDrawable="@drawable/progress_design"
+                    />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,30 +84,46 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 android:layout_marginTop="@dimen/_15sdp"
-                >
+                android:orientation="horizontal">
 
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="@dimen/_100sdp"
+              <com.google.android.material.button.MaterialButton
+                    android:id="@+id/applyforloan"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="end"
-                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
                     android:backgroundTint="@color/btncolor"
                     android:text="Apply now"
                     android:textAllCaps="false" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/applyforloan"
+                    <com.google.android.material.button.MaterialButton
+                    android:id="@+id/getnow"
                     android:layout_width="@dimen/_130sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="end"
                     android:layout_marginRight="@dimen/_20sdp"
                     android:backgroundTint="@color/btncolor"
                     android:text="Get Now"
+                    android:visibility="gone"
                     android:textAllCaps="false" />
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
 </RelativeLayout>

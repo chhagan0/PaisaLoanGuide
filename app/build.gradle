@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace 'com.fliploan.guide'
+    namespace 'com.fliploanguide.Fastapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.fliploan.guide"
+        applicationId "com.fliploanguide.Fastestapp"
         minSdk 24
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName "4.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -64,6 +64,9 @@ dependencies {
      implementation 'com.github.1902shubh:AdmobOpenAds:1.0.1'
     implementation project(':nativetemplates')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.github.1902shubh:AdmobOpenAds:1.0.1'
-    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    implementation 'com.facebook.android:audience-network-sdk:6.5.0'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
 }

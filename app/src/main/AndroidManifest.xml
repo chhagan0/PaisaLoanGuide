@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
         android:name=".ads.MyApplication"
         android:allowBackup="true"
@@ -16,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMP"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Termandcondition"
+            android:exported="false" />
         <activity
             android:name=".blankscreen"
             android:exported="false" />
@@ -27,15 +30,15 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreen3"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask" />
         <activity
             android:name=".SplashScreen2"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".CashCounter"
             android:exported="false" />
@@ -176,7 +179,8 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -190,6 +194,10 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="onesignal_app_id"
+            android:value="NDAwYjMwOTUtYzczNC00MDk0LTk5N2YtZTkyODg4NGI1ZTIy" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

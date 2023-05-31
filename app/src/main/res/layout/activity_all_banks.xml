@@ -32,19 +32,29 @@
             android:textSize="@dimen/_15sdp" />
 
     </LinearLayout>
-    <com.google.android.ads.nativetemplates.TemplateView
-        android:id="@+id/my_template"
-android:layout_below="@id/lin1"
-    app:gnt_template_type="@layout/gnt_small_template_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+   <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+ android:layout_below="@id/lin1"
+       android:background="@color/white"
+         android:orientation="horizontal" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader"
+ android:layout_below="@id/lin1"
+         android:accessibilityPaneTitle="Ads Loading"
+        android:indeterminateDrawable="@drawable/progress_design"
+        android:foregroundGravity="bottom"/>
+
+
     <LinearLayout
         android:id="@+id/lin2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/my_template"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:gravity="center_horizontal">
+        android:layout_below="@id/banner"
+         android:gravity="center_horizontal">
 
 
         <com.google.android.material.card.MaterialCardView
@@ -68,6 +78,7 @@ android:layout_below="@id/lin1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/lin2"
+        android:layout_above="@id/bannerbottom"
         android:layout_marginTop="@dimen/_10sdp">
 
         <LinearLayout
@@ -84,7 +95,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/allahabad"
                 android:layout_marginTop="@dimen/_25sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+                app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -128,7 +139,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/andhrabank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+                app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -172,7 +183,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:id="@+id/boi"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -217,7 +228,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/canarabank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -262,7 +273,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/centralboi"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -307,7 +318,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/federalbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -352,7 +363,7 @@ android:layout_below="@id/lin1"
                 android:id="@+id/hdfcbank"
 
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -397,7 +408,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/icicbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -441,7 +452,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/idbibank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -485,7 +496,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/indianbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -529,7 +540,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/indusindbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -573,7 +584,7 @@ android:layout_below="@id/lin1"
                 android:id="@+id/kotakbank"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -617,7 +628,7 @@ android:layout_below="@id/lin1"
                 android:id="@+id/pnb"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -661,7 +672,7 @@ android:layout_below="@id/lin1"
                 android:id="@+id/rblbank"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -706,7 +717,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/sarawatbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -752,7 +763,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/ucobank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -796,7 +807,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:id="@+id/unionbank"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -841,7 +852,7 @@ android:layout_below="@id/lin1"
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:cardCornerRadius="@dimen/_10sdp">
+               app:cardCornerRadius="@dimen/_6sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -884,4 +895,19 @@ android:layout_below="@id/lin1"
 
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
 </RelativeLayout>

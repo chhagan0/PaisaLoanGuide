@@ -6,6 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen2">
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+ android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/_40sdp"
@@ -66,11 +81,12 @@
                 android:layout_height="@dimen/_30sdp"
                 app:cardCornerRadius="@dimen/_50sdp"
                 android:id="@+id/rotate"
+                android:layout_gravity="center_horizontal"
                 android:backgroundTint="#FFFFFF">
                 <ImageView
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
-                    android:src="@drawable/rotate"
+                    android:src="@drawable/baseline_help_24"
                     android:layout_gravity="center"
                     app:tint="@color/btncolor" />
 
@@ -80,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:text="Rotate"/>
+                    android:text="@string/help_support"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -116,13 +132,21 @@ android:gravity="center"
     </LinearLayout>
 
 
-    <com.google.android.ads.nativetemplates.TemplateView
-        android:id="@+id/my_template"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+       <LinearLayout
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
 
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:foregroundGravity="bottom"
-        app:gnt_template_type="@layout/gnt_small_template_view" />
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" />
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loader"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:accessibilityPaneTitle="Ads Loading"
+    android:indeterminateDrawable="@drawable/progress_design"
+    android:foregroundGravity="bottom"/>
 </RelativeLayout>

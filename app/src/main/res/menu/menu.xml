@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Loan Status"
-        android:id="@+id/loanstatusnav"
+    <item android:title="Privacy &amp; Policy"
+        android:id="@+id/privacypolicymenu"
         android:iconTint="@color/black"
-        android:icon="@drawable/travel"
+        android:icon="@drawable/privacy"
       />
     <item android:title="About Us"
+        android:id="@+id/termandconditionmenu"
         android:icon="@drawable/terms"
         android:iconTint="@color/black"/>
 </menu>

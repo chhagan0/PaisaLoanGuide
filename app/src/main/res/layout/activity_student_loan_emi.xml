@@ -26,7 +26,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/_20sdp"
             android:fontFamily="@font/archivo_semibold"
-            android:text="Student Loan"
+            android:text="Student"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
     </LinearLayout>
@@ -38,15 +38,21 @@
         android:layout_marginTop="@dimen/_50sdp"
         android:gravity="center"
         android:orientation="vertical">
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_80sdp"
-            android:layout_below="@id/lin1"
-            android:layout_centerHorizontal="true"
-            app:adSize="BANNER"
-            android:layout_gravity="center_horizontal"
-            app:adUnitId="@string/bannerid"/>
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loader"
+                android:indeterminateDrawable="@drawable/progress_design"
+                />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -332,5 +338,19 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
 </RelativeLayout>

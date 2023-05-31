@@ -43,7 +43,7 @@
         android:orientation="vertical">
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_height="@dimen/_65sdp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,12 +71,15 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
+                            android:tint="@color/white"
                             android:id="@+id/minus"/>
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/plus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -95,7 +98,7 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
             android:layout_marginTop="@dimen/_20sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_height="@dimen/_65sdp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,6 +107,7 @@
                 <ImageView
                     android:layout_width="@dimen/_70sdp"
                     android:layout_height="@dimen/_35sdp"
+
                     android:src="@drawable/fiveh"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/_15sdp"/>
@@ -121,14 +125,18 @@
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
+
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
-                            android:id="@+id/fiveminus"/>
+                            android:id="@+id/fiveminus"
+                            app:tint="@color/white" />
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/fiveplus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -146,7 +154,7 @@
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_20sdp"
 
             android:layout_height="@dimen/_65sdp">
@@ -158,6 +166,7 @@
                     android:layout_width="@dimen/_70sdp"
                     android:layout_height="@dimen/_35sdp"
                     android:src="@drawable/twoh"
+
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/_15sdp"/>
                 <com.google.android.material.card.MaterialCardView
@@ -176,12 +185,16 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
-                            android:id="@+id/twohundredminus"/>
+
+                            android:id="@+id/twohundredminus"
+                            app:tint="@color/white" />
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/twohundredplus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -200,7 +213,7 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_20sdp"
 
             android:layout_height="@dimen/_65sdp">
@@ -230,12 +243,16 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
+                            android:tint="@color/white"
+
                             android:id="@+id/onehundredminus"/>
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/onehundredplus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -253,7 +270,7 @@
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_20sdp"
 
             android:layout_height="@dimen/_65sdp">
@@ -283,12 +300,16 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
+                            android:tint="@color/white"
+
                             android:id="@+id/fiftyminus"/>
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/fiftyplus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -306,7 +327,7 @@
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_20sdp"
 
             android:layout_height="@dimen/_65sdp">
@@ -336,12 +357,16 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
+                            android:tint="@color/white"
+
                             android:id="@+id/twentyminus"/>
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
                             android:src="@drawable/plus"
+                            android:tint="@color/white"
+
                             android:id="@+id/twentyplus"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -359,7 +384,7 @@
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="@dimen/_290sdp"
-            app:cardCornerRadius="@dimen/_10sdp"
+           app:cardCornerRadius="@dimen/_6sdp"
             android:layout_marginTop="@dimen/_20sdp"
 
             android:layout_height="@dimen/_65sdp">
@@ -370,6 +395,7 @@
                 <ImageView
                     android:layout_width="@dimen/_70sdp"
                     android:layout_height="@dimen/_35sdp"
+
                     android:src="@drawable/ten"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="@dimen/_15sdp"/>
@@ -389,11 +415,15 @@
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_5sdp"
                             android:src="@drawable/minus"
+                            android:tint="@color/white"
+
                             android:id="@+id/tenminus"/>
                         <ImageView
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_23sdp"
                             android:layout_marginLeft="@dimen/_20sdp"
+                            android:tint="@color/white"
+
                             android:src="@drawable/plus"
                             android:id="@+id/tenplus"/>
                     </LinearLayout>
@@ -447,7 +477,7 @@
         android:layout_width="@dimen/_70sdp"
         android:layout_height="@dimen/_35sdp"
         android:backgroundTint="@color/graycolor"
-        app:cardCornerRadius="@dimen/_10sdp"
+       app:cardCornerRadius="@dimen/_6sdp"
         android:text="get"
         android:textAllCaps="false"
         android:textSize="@dimen/_14sdp"
@@ -459,7 +489,7 @@
         android:layout_width="@dimen/_70sdp"
         android:layout_height="@dimen/_35sdp"
         android:backgroundTint="@color/btncolor"
-        app:cardCornerRadius="@dimen/_10sdp"
+       app:cardCornerRadius="@dimen/_6sdp"
         android:text="Share"
         android:layout_marginLeft="@dimen/_20sdp"
         android:textAllCaps="false"

@@ -28,17 +28,29 @@
             android:fontFamily="@font/archivo_semibold"/>
     </LinearLayout>
 
-    <com.google.android.ads.nativetemplates.TemplateView
-        android:id="@+id/my_template"
-        android:layout_below="@id/lin1"
-        android:layout_marginBottom="@dimen/_50sdp"
-        app:gnt_template_type="@layout/gnt_small_template_view"
+    <LinearLayout
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        android:layout_below="@id/lin1"
+        android:layout_marginBottom="35sp"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loader"
+            android:layout_below="@id/lin1"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/_55sdp"
-        android:layout_below="@id/my_template"
+        android:layout_below="@id/banner"
+        android:layout_above="@id/bannerbottom"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -82,7 +94,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_20sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_3sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -99,7 +111,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/personalloan"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -117,7 +129,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_30sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_6sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -129,12 +141,12 @@
                                 android:text="Auto Loan"
                                 android:fontFamily="@font/archivo_semibold"
                                 android:textColor="@color/black"
-                                android:layout_marginTop="@dimen/_5sdp"/>
+                                android:layout_marginTop="@dimen/_3sdp"/>
                             <ImageView
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/car"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -163,7 +175,7 @@
                         android:id="@+id/auto"
                         android:layout_marginLeft="@dimen/_20sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_3sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -180,7 +192,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/home"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -198,7 +210,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_30sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_6sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -215,7 +227,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/business"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -244,7 +256,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_20sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_3sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -253,7 +265,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Student Loan"
+                                android:text="Student"
                                 android:fontFamily="@font/archivo_semibold"
                                 android:textColor="@color/black"
                                 android:layout_marginTop="@dimen/_5sdp"/>
@@ -261,7 +273,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/student"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -279,7 +291,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_30sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_6sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -288,7 +300,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mortgages Loan"
+                                android:text="Instant Loan Guide"
+                                android:textAlignment="center"
                                 android:fontFamily="@font/archivo_semibold"
                                 android:textColor="@color/black"
                                 android:layout_marginTop="@dimen/_5sdp"/>
@@ -296,7 +309,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/mortgages"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -324,7 +337,7 @@
                         android:layout_height="@dimen/_130sdp"
                         android:layout_marginLeft="@dimen/_20sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_3sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -333,7 +346,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pay Day Loan"
+                                android:text="Loan Guide"
                                 android:fontFamily="@font/archivo_semibold"
                                 android:textColor="@color/black"
                                 android:layout_marginTop="@dimen/_5sdp"/>
@@ -341,7 +354,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/calender"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -357,10 +370,9 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="@dimen/_90sdp"
                         android:layout_height="@dimen/_130sdp"
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:layout_marginLeft="@dimen/_30sdp"
+                         android:layout_marginLeft="@dimen/_30sdp"
                         android:background="@color/white"
-                        app:cardCornerRadius="@dimen/_10sdp">
+                       app:cardCornerRadius="@dimen/_6sdp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -377,7 +389,7 @@
                                 android:layout_width="@dimen/_35sdp"
                                 android:layout_height="@dimen/_35sdp"
                                 android:src="@drawable/smallbusiness"
-                                app:tint="#03A9F4"
+                                app:tint="#191835"
                                 android:layout_marginTop="@dimen/_15sdp"
                                 android:layout_gravity="center"/>
                             <com.google.android.material.button.MaterialButton
@@ -397,5 +409,19 @@
 
         </LinearLayout>
     </ScrollView>
-
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
 </RelativeLayout>

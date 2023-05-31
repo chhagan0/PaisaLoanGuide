@@ -6,6 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen3">
+    <LinearLayout
+        android:id="@+id/bannerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentTop="true"
+         android:background="@color/white"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loaderbottom"
+            android:indeterminateDrawable="@drawable/progress_design"
+            />
+    </LinearLayout>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/_40sdp"
@@ -142,13 +157,21 @@
     </LinearLayout>
 
 
-    <com.google.android.ads.nativetemplates.TemplateView
-        android:id="@+id/my_template"
+         <LinearLayout
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
 
         android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/_20sdp"
-        android:foregroundGravity="bottom"
-        app:gnt_template_type="@layout/gnt_small_template_view" />
+        android:accessibilityPaneTitle="Ads Loading"
+        android:indeterminateDrawable="@drawable/progress_design"
+        android:foregroundGravity="bottom"/>
 </RelativeLayout>
